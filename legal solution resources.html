@@ -301,7 +301,7 @@
             <p class="py-7 font-bold">There are many variations of passages of Lorem Ipsum available, but the majority have <br>
               suffered alteration in some form, by injected humour.</p>
           </div>
-           <div class="flex lg:flex-row flex-col gap-11 justify-between">
+           <div class="flex lg:flex-row flex-col gap-11 ">
               <div class=" flex items-center">
                 <div>
                       <!-- Accordion-1  -->
@@ -340,16 +340,16 @@
                 </div>
                 </div>
               </div>
-              <div>
-                <img src="images/faq.png" alt="">
+              <div class="justify-center flex">
+                <img src="images/faq.png" alt="" class="lg:h-[500px] lg:w-[900px] h-[500px]">
               </div>
            </div>
         </section>
         <!-- card section 2 -->
-        <section class="flex gap-11 items-center justify-center lg:flex-row flex-col ">
+        <section class="flex gap-11 items-center justify-center lg:flex-row   flex-col ">
           <!-- card main section  -->
-          <div class="flex lg:flex-row flex-col lg:px-24 p-2">
-            <div class="">
+           <div class=" flex md:flex-row  flex-col">
+               <div>
                <!-- card 1  -->
                <div class="card rounded-none border-b-2 lg:w-96 bg-white ">
                 <figure>
@@ -385,9 +385,9 @@
                 </div>
             </div>
             <!-- card section 2 -->
-            <div class="lg:px-24 p-2">
+            <div class="lg:px-24 ">
                <!-- card 3 -->
-               <div class="card lg:border-l-2  border-none  lg:border-b-2 rounded-none bg-white ">
+               <div class="card rounded-none lg:border-l-2   lg:border-b-2  bg-white ">
                 <figure>
                   <img
                     src="images/call.png"
@@ -407,7 +407,7 @@
                   </div>
                 </div>
                  <!-- card 4 -->
-              <div class="card lg:border-l-2 border-none rounded-none bg-white ">
+              <div class="card lg:border-l-2  rounded-none bg-white ">
                 <figure>
                   <img
                     src="images/time.png"
@@ -424,7 +424,7 @@
                 </div>
             </div>
           </div>
-          <div class="w-[600px] p-2 grid  justify-stretch lg:flex-row flex-col">
+          <div class="lg:w-[600px] w-auto p-2 grid  justify-stretch lg:flex-row flex-col">
             <label class="input my-2 border-4 border-black bg-white text-black text-2xl h-20 flex items-center gap-2">
               <input type="text" class="grow" placeholder="Search" />
               <svg
@@ -475,7 +475,7 @@
               </svg>
               <input type="password" class="grow" value="password" />
             </label>
-            <label class="input border-black my-7 text-black text-2xl border-4 bg-white h-[300px] flex  gap-2">
+            <label class="input border-black my-3 text-black text-2xl border-4 bg-white lg:h-[300px] flex  gap-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 16 16"
@@ -492,42 +492,50 @@
           </div>
         </section>
     </main>
-    <footer class="footer bg-base-200 text-base-content py-5 px-24 text-4xl gap-5 p-10">
-      <nav class="gap-11">
-        <h6 class="footer-title">Services</h6>
-        <a class="link link-hover">Branding</a>
-        <a class="link link-hover">Design</a>
-        <a class="link link-hover">Marketing</a>
-        <a class="link link-hover">Advertisement</a>
-      </nav>
-      <nav class="gap-11">
-        <h6 class="footer-title">Company</h6>
-        <a class="link link-hover">About us</a>
-        <a class="link link-hover">Contact</a>
-        <a class="link link-hover">Jobs</a>
-        <a class="link link-hover">Press kit</a>
-      </nav>
-      <nav class="gap-11">
-        <h6 class="footer-title">Legal</h6>
-        <a class="link link-hover">Terms of use</a>
-        <a class="link link-hover">Privacy policy</a>
-        <a class="link link-hover">Cookie policy</a>
-      </nav>
-      <form class="gap-11">
-        <h6 class="footer-title">Newsletter</h6>
-        <fieldset class="form-control w-80">
-          <label class="label">
-            <span class="label-text">Enter your email address</span>
-          </label>
-          <div class="join">
-            <input
-              type="text"
-              placeholder="username@site.com"
-              class="input input-bordered join-item" />
-            <button class="btn btn-primary join-item">Subscribe</button>
-          </div>
-        </fieldset>
-      </form>
+    <footer>
+     <div class="bg-base-200 py-5 px-24 text-4xl justify-around p-10 flex">
+      <img class="items-center" src="images/logo.png" alt="">
+      <a class="link link-hover">Usefull Link</a>
+      <a class="link link-hover">Contact Now</a>
+      <a class="link link-hover">Subscribe</a>
+     </div>
+      <div class="footer justify-around bg-base-200 text-base-content py-5 px-24 text-4xl gap-5 p-10">
+        <nav class="gap-11">
+          
+          <a class="link link-hover">Branding</a>
+          <a class="link link-hover">Design</a>
+          <a class="link link-hover">Marketing</a>
+          <a class="link link-hover">Advertisement</a>
+        </nav>
+        <nav class="gap-11">
+          
+          <a class="link link-hover">About us</a>
+          <a class="link link-hover">Contact</a>
+          <a class="link link-hover">Jobs</a>
+          <a class="link link-hover">Press kit</a>
+        </nav>
+        <nav class="gap-11">
+         
+          <a class="link link-hover">Terms of use</a>
+          <a class="link link-hover">Privacy policy</a>
+          <a class="link link-hover">Cookie policy</a>
+        </nav>
+        <form class="">
+          <h6 class="footer-title">Newsletter</h6>
+          <fieldset class="form-control ">
+            <label class="label">
+              <span class="label-text">Enter your email address</span>
+            </label>
+            <div class="join">
+              <input
+                type="text"
+                placeholder="username@site.com"
+                class="input input-bordered join-item" />
+              <button class="btn btn-primary join-item">Subscribe</button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
     </footer>
 </body>
 </html>
